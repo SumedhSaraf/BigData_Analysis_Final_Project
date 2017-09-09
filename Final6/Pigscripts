@@ -1,0 +1,18 @@
+log = 	LOAD '/home/sumedh/2008.csv' using PigStorge(',');
+grpd = GROUP log BY $16;
+cntd = FOREACH grpd GENERATE group,COUNT(log);
+STORE cntd INTO 'outputcount';
+
+log1 = 	LOAD '/home/sumedh/2008.csv' using PigStorge(',');
+grpd1 = GROUP log1 BY $16;
+cntd1 = FOREACH grpd1 GENERATE group,COUNT(log1);
+STORE cntd1 INTO 'outputcount1';
+
+t2 = LOAD '/home/sumedh/Join/t2' AS (place2,count2);
+t1 = LOAD '/home/sumedh/Join/t1' AS (place1,count1);
+joined = JOIN t1 BY place1, t2 BY place2;
+store joined INTO 'joinedoutput';
+
+log2 = LOAD '/home/sumedh/Join/t3 AS (name1,value1,name2,value2);
+sum2 = FOREACH log2 GENERATE (name1,value1+value2);
+store sum2 INTO 'finalOutput';
