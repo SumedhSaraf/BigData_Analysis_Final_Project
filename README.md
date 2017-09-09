@@ -3,7 +3,9 @@
 ### Year chosen for data download-2008. Dataset contains information pertaining to each flight trip. 
 ### The project contains 7 Part, each of which try to answer question stated below. Pig,Hbase,Map Reduce,HDFS,Tableau are mainly used for the analysis
 ### Which airlines have worst and best departure delays?
+
 <img src="Images/A1.PNG">
+
 ### Which airlines have flights travelling distances between 0- 50 miles and 900-1400?
 ### What will be the Air Traffic for each month in USA?
 ### Which airline  company offered maximum number of trips in 2008 throughout USA?
