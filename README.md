@@ -26,8 +26,9 @@
 
 ### How to recommend a particular flights  for a particular day if the given flight has no seats left?
 
-<img src="Images/recom.png">
+<img src="Images/recom.PNG">
 
 ### How to Find the flight that has travelled for maximum amount of time?
+Hawaiian Airlines has the flights which travel maximum time per trip
 
 
